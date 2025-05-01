@@ -7,6 +7,7 @@ phases:
   build:
     commands:
       - echo No build step needed
+      - npm run build
 artifacts:
   files:
     - '**/*'
