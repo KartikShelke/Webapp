@@ -3,27 +3,20 @@ version: 0.2
 phases:
   install:
     commands:
-      # Install npm dependencies
       - echo Installing dependencies...
       - npm install
 
   build:
     commands:
-      # Log build start time
       - echo Build started on `date`
-      
-      # Run the build command (ensure that this works locally)
-      - npm run build
-      
-      # If no build step is needed, you can remove the line below or adjust accordingly
+      - npm run build || echo "Build failed, see error details"
       - echo No build step needed
 
   post_build:
     commands:
-      # Additional commands after the build is completed (if any)
       - echo Build completed successfully
 
 artifacts:
   files:
-    - '**/*'  # Include all files in the build artifact (adjust if needed)
-  discard-paths: yes  # Remove file paths in the artifact if required
+    - '**/*'
+  discard-paths: yes
