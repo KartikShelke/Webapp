@@ -9,14 +9,8 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - npm run build || echo "Build failed, see error details"
       - echo No build step needed
 
   post_build:
     commands:
       - echo Build completed successfully
-
-artifacts:
-  files:
-    - '**/*'
-  discard-paths: yes
