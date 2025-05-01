@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "express": "^5.1.0"
-  }
+  },
+  "name": "webapp",
+  "description": "",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KartikShelke/webapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KartikShelke/webapp/issues"
+  },
+  "homepage": "https://github.com/KartikShelke/webapp#readme"
 }
